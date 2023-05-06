@@ -1,0 +1,11 @@
+CREATE TABLE `work_history` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `PersonId` int(11) NOT NULL,
+  `Company` varchar(100) NOT NULL,
+  `Job_Title` varchar(100) NOT NULL,
+  `Start_Date` varchar(100) NOT NULL,
+  `End_Date` varchar(100) NOT NULL,
+  PRIMARY KEY (`Id`),
+  KEY `FK_Work-History_Person_idx` (`PersonId`),
+  CONSTRAINT `FK_Work-History_Person` FOREIGN KEY (`PersonId`) REFERENCES `person` (`idPerson`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4

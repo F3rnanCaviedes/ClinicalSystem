@@ -1,0 +1,17 @@
+CREATE TABLE `person` (
+  `idPerson` int(11) NOT NULL AUTO_INCREMENT,
+  `Nit` varchar(45) NOT NULL,
+  `First_Name` varchar(100) NOT NULL,
+  `Second_Name` varchar(100) NOT NULL,
+  `SurName` varchar(100) NOT NULL,
+  `SecondSurname` varchar(100) NOT NULL,
+  `Photo` varchar(250) DEFAULT NULL,
+  `Telephone` varchar(45) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Gender` int(11) NOT NULL,
+  `Nacionality` int(11) NOT NULL,
+  `Marital_Status` int(11) NOT NULL,
+  `Birthday` varchar(100) NOT NULL,
+  `RH` varchar(10) NOT NULL,
+  PRIMARY KEY (`idPerson`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4

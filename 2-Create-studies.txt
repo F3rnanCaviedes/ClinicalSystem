@@ -1,0 +1,10 @@
+CREATE TABLE `studies` (
+  `idStudies` int(11) NOT NULL AUTO_INCREMENT,
+  `PersonId` int(11) NOT NULL,
+  `Job_Title` varchar(100) NOT NULL,
+  `Educational_entity` varchar(100) NOT NULL,
+  `End_Date` varchar(100) NOT NULL,
+  PRIMARY KEY (`idStudies`),
+  KEY `FK_Studies_Person_idx` (`PersonId`),
+  CONSTRAINT `FK_Studies_Person` FOREIGN KEY (`PersonId`) REFERENCES `person` (`idPerson`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4
